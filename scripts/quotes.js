@@ -15,7 +15,7 @@
           {text:"<q>If it works, it&#8217;s beautiful.</q><br />- Stephen Hawes"},
           {text:"<q>When it comes to their capacity to screw things up, computers are becoming more human every day.</q><br />- Seth Lloyd"}
 		  ];
-
-       var quote = quotes[Math.floor(Math.random() * quotes.length)];
-       document.getElementById("quote").innerHTML = '<aside>'+quote.text+'</aside>';
+    
+    var quote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById("quote").innerHTML = '<aside>'+quote.text+'</aside>';
 })();
