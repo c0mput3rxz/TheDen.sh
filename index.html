@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html class="noselect" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link type="text/plain" rel="author" href="http://theden.sh/humans.txt"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="c0mput3rxz, c0mput3rxz.com, heilman, penguin, web3, blockchain, defi, smart contracts, ethereum, founder, CTO, azos finance"/>
+    <meta name="Description" content="penguin @ c0mput3rxz - Web3 Developer, Builder, Founder & CTO"/>
+    <title>c0mput3rxz.com</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <script src="scripts/blink.js"></script>
+    <script src="scripts/scanlines.js"></script>
+    <script src="scripts/console.js"></script>
+    <script src="scripts/typed.js"></script>
+    <script src="scripts/ascii.js"></script>
+    <script src="scripts/config-loader.js"></script>
+    <script src="scripts/render-from-config.js"></script>
+</head>
+<body>
+    <div id="content" contenteditable="false">
+        <div id="cardcontent">
+            <div id="cover">
+                <div id="line">
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="header">
+                <!-- FILE EDIT OPTIONS BUFFERS TOOLS Sh-Script HELP -->
+                <div class="dropdown">
+                    <span class="dropbtn">File</span>
+                    <div class="dropdown-content">
+                        <pre>Change Prefix of files:
+        for file in Prefix*; do mv "$file" WhatUWant"${file#Prefix}"; done</pre>
+                        <pre>Diff:
+        diff &lt;(find /etc | sort) &lt;(find /mnt/remote/etc | sort)</pre>
+                        <pre>chmod 754:
+        chmod u=rwx,g=rx,o=r myfile</pre>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropbtn">Math</span>
+                    <div class="dropdown-content">
+                        <pre>Calc:
+        echo $((3*37+12)) # Outputs 123
+        echo $((2**16-1)) # Two to the power of sixteen minus one; outputs 65535
+        echo $((103/10))  # Outputs 10, as all these operations are integer arithmetic
+        echo $((103%10))  # Outputs 3, which is the remainder of 103 divided by 10</pre>
+                        <pre>Bitwise:
+        echo $((0xdeadbeef)) # Outputs 3735928559
+        echo $((0127))       # Outputs 87</pre>
+                        <pre>Floating Point:
+        echo 'scale=12; 2.5*2.5'  | bc # Outputs 6.25
+        echo 'scale=12; sqrt(14)' | bc # Outputs 3.741657386773</pre>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropbtn">Screen</span>
+                    <div class="dropdown-content">
+                        <pre>Kill:
+        screen -X -S #screen quit</pre>
+                        <pre>Over ssh:
+        ssh -t user@host screen -x #screen</pre>
+                        <pre>Detach:
+        cntrl + a, d</pre>
+                        <pre>Next:
+        cntrl + a, n</pre>
+                        <pre>Prev:
+        cntrl + a, p</pre>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropbtn">Awk</span>
+                    <div class="dropdown-content">
+                        <pre>Search:
+        awk '/start_pattern/,/stop_pattern/' file.txt</pre>
+                        <pre>Scroll:
+        Cntrl + a then esc, enter to exit</pre>
+                        <pre>Ram reader:
+        sudo cat /proc/kcore | strings | awk 'length &gt; 20' | less</pre>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropbtn">Web3</span>
+                    <div class="dropdown-content">
+                        <pre>Hardhat compile:
+        npx hardhat compile</pre>
+                        <pre>Hardhat test:
+        npx hardhat test</pre>
+                        <pre>Deploy contract:
+        npx hardhat run scripts/deploy.js --network mainnet</pre>
+                        <pre>Verify contract:
+        npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS</pre>
+                        <pre>Check balance:
+        cast balance ADDRESS --rpc-url $RPC_URL</pre>
+                        <pre>Send transaction:
+        cast send ADDRESS "function()" --rpc-url $RPC_URL --private-key $PRIVATE_KEY</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="draggable" style="position: relative;">
+                <div id="card1" class="move">
+                    <h1><strong>penguin Heilman</strong></h1>
+                    <a class="social-icon-link" href="https://github.com/c0mput3rxz" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                </div>
+                <div id="card1" class="move">
+                    <h4>About</h4>
+                    <p>Founder & CTO @ <a href="https://azos.finance" target="_blank">Azos Finance</a></p>
+                    <p>Web3 Developer, Builder, and Blockchain Enthusiast</p>
+                    <h4>Interests</h4>
+                    <p>Web3, DeFi, Smart Contracts, Blockchain Security, Coding, Bioinformatics, SecOps</p>
+                    <h4>Location</h4>
+                    <p>CA, USA</p>
+                    <h4>Contact</h4>
+                    <p>penguin@azos.tech</p>
+                </div>
+            </div>
+            <div class="draggable" style="position: relative;">
+                <div id="card-projects" class="move">
+                    <h3>Projects & Work</h3>
+                    <p><a href="https://github.com/c0mput3rxz" target="_blank">GitHub</a> - Open source contributions and projects</p>
+                    <p><a href="https://azos.finance" target="_blank">Azos Finance</a> - DeFi platform and protocols</p>
+                    <hr/>
+                    <h3>Links of interest</h3>
+                    <p><a href="https://ethereum.org" target="_blank">Ethereum</a> - The world's programmable blockchain</p>
+                    <p><a href="https://news.ycombinator.com/" target="_blank">Hacker News</a> - Tech news and discussions</p>
+                    <p><a href="https://waterdeep.org/" target="_blank">Waterdeep</a> - City of Splendors</p>
+                    <hr/>
+                    <h4><strong>[root@c0mput3rxz ~]# uptime</strong></h4>
+                    <span id="clock" class="clock">
+                        <script type="text/javascript" src="scripts/uptime.js"></script>
+                    </span>
+                </div>
+            </div>
+            <div class="draggable" style="position: relative;">
+                <div id="card-press" class="move">
+                    <h3>Press & Media</h3>
+                    <h4>Podcasts</h4>
+                    <p><a href="https://podcasters.spotify.com/pod/show/metagame/episodes/Humans-of-Metagame-2---Penguin-The-High-Flying-Flightless-Bird-e12lgib" target="_blank">MetaRadio</a> - Humans of MetaGame #2 — Penguin The High Flying Flightless Bird</p>
+                    <p><a href="https://podcasters.spotify.com/pod/show/metagame/episodes/Share-What-Youre-Makin-w-Chair--Bacon-1---Penguin-on-Never-Touch-Fiat-Again-e162gv9" target="_blank">MetaRadio</a> - Share What You're Makin' w/ Chair & Bacon #1 — Penguin on Never Touch Fiat Again</p>
+                    <p><a href="https://medium.com/humanizing-the-singularity/the-future-of-stuff-podcast-ep-2-from-asset-backed-finance-to-art-with-a-message-2faa1538b4bc" target="_blank">Mattereum — The Future of Stuff</a> - Ep. 2: From Asset-Backed Finance to Art with a Message</p>
+                    <hr/>
+                    <h4>Articles</h4>
+                    <p><a href="https://fortune.com/2022/03/07/toilet-paper-nfts-wipe-out-medical-debt/" target="_blank">Toilet Paper NFTs Wipe Out $7 Million in Medical Debt</a> - Fortune</p>
+                    <p><a href="https://www.diadata.org/blog/post/partnership-with-azos-finance-stablecoin/" target="_blank">Partnership with Azos Finance to Power the Collateral Layer of Climate Impact Assets</a> - DIA Oracles</p>
+                    <p><a href="https://metagame.substack.com/p/metaspecial-metafest-is-alive" target="_blank">MetaSpecial — MetaFest Is aLive!</a> - MetaGame Substack</p>
+                </div>
+            </div>
+            <div class="draggable draggable--manifesto" style="position: relative;">
+                <div id="card-manifesto" class="move manifesto-wrap">
+                    <!-- MANIFESTO -->
+                    <h2>A Cypherpunk's Manifesto</h2>
+                    <p class="m-intro">
+                      Eric Hughes &mdash; 9 March 1993 &mdash;
+                      <a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net</a>
+                    </p>
+                    <p>
+                      The founding document of the cypherpunk movement. Privacy is not something
+                      governments will give you &mdash; it must be built. Ten principles that
+                      predicted the internet, surveillance capitalism, and Bitcoin.
+                    </p>
+
+                    <!-- 01 -->
+                    <div class="principle" id="p1">
+                      <span class="principle-num">// 01</span>
+                      <span class="principle-title">PRIVACY IS NOT SECRECY</span>
+                      <div class="original">
+                        &ldquo;Privacy is necessary for an open society in the electronic age.
+                        Privacy is not secrecy. A private matter is something one doesn&rsquo;t
+                        want the whole world to know, but a secret matter is something one
+                        doesn&rsquo;t want anybody to know. Privacy is the power to selectively
+                        reveal oneself to the world.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Secrecy hides from everyone. Privacy is selective disclosure &mdash;
+                        sharing different things with different people. This single distinction
+                        dismantles the &ldquo;nothing to hide&rdquo; argument before it can be made.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d1a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d1b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d1a">
+                        <p>Privacy is about <em>autonomy</em>, not wrongdoing. You can live
+                        entirely in public &mdash; no secrets at all &mdash; while exercising
+                        privacy: choosing what to share, with whom, and when. End-to-end
+                        encryption implements this: the message flows openly; only the intended
+                        reader decodes it.</p>
+                        <h3>Why it matters now</h3>
+                        <ul>
+                          <li>A doctor shares your diagnosis with insurers &mdash; no secret, but a privacy violation</li>
+                          <li>40 apps know your location &mdash; you hide nothing, but you are not private</li>
+                          <li>GDPR Art. 5 encodes this as &ldquo;data minimisation&rdquo; &mdash; thirty years after Hughes wrote it</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d1b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://www.eff.org/issues/privacy" target="_blank">EFF: Privacy Issues &rarr;</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Privacy" target="_blank">Privacy &mdash; Wikipedia &rarr;</a></li>
+                          <li><a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">GDPR Art. 5 &mdash; Data minimisation &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p2">aggregation problem</a>
+                        <a href="#p3">minimal disclosure</a>
+                        <a href="#p5">cryptography</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>philosophy &nbsp;<span class="h">#</span>civil-liberties &nbsp;<span class="h">#</span>foundational</p>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="principle" id="p2">
+                      <span class="principle-num">// 02</span>
+                      <span class="principle-title">THE AGGREGATION PROBLEM</span>
+                      <div class="original">
+                        &ldquo;If two parties have some sort of dealings, then each has a memory of
+                        their interaction. The power of electronic communications has enabled such
+                        group speech, and it will not go away merely because we might want it to.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Every transaction leaves a trace. Individually harmless; aggregated,
+                        a surveillance-grade profile. Laws can&rsquo;t stop people talking.
+                        The fix is architecture: don&rsquo;t create data that can be combined.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d2a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d2b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d2a">
+                        <p>Name: harmless. Employer: harmless. Neighborhood: harmless.
+                        Name + employer + neighborhood + commute + purchases = dossier.
+                        Hughes saw this in 1993, before Google, before Facebook, before
+                        Cambridge Analytica.</p>
+                        <h3>Validated by history</h3>
+                        <ul>
+                          <li>NSA PRISM (2013): metadata aggregation across millions of innocent people</li>
+                          <li>Cambridge Analytica: 87M profiles harvested from innocuous quiz data</li>
+                          <li>Data broker industry: $200B/yr selling aggregated personal records</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d2b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/PRISM_(surveillance_program)" target="_blank">NSA PRISM &mdash; Wikipedia &rarr;</a></li>
+                          <li><a href="https://www.eff.org/nsa-spying" target="_blank">EFF: NSA Spying &rarr;</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal" target="_blank">Cambridge Analytica &mdash; Wikipedia &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p1">privacy vs secrecy</a>
+                        <a href="#p3">minimal disclosure</a>
+                        <a href="#p6">don&rsquo;t trust institutions</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>surveillance &nbsp;<span class="h">#</span>data-aggregation &nbsp;<span class="h">#</span>architecture</p>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="principle" id="p3">
+                      <span class="principle-num">// 03</span>
+                      <span class="principle-title">MINIMAL DISCLOSURE PRINCIPLE</span>
+                      <div class="original">
+                        &ldquo;Since we desire privacy, we must ensure that each party to a
+                        transaction have knowledge only of that which is directly necessary for
+                        that transaction. When I purchase a magazine at a store and hand cash
+                        to the clerk, there is no need to know who I am.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Don&rsquo;t give what isn&rsquo;t needed. Cash completes the exchange
+                        without binding identity. Hughes invented GDPR&rsquo;s &ldquo;data minimisation&rdquo;
+                        thirty years before it became law.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d3a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d3b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d3a">
+                        <p>Cash is the gold standard: payment completes, identity never enters.
+                        No database, no profile. Hughes wanted digital systems to inherit
+                        this property.</p>
+                        <h3>Technical implementations today</h3>
+                        <ul>
+                          <li>Zero-knowledge proofs: prove you&rsquo;re over 18 without revealing your birthdate</li>
+                          <li>Signal sealed sender: server doesn&rsquo;t know who is messaging whom</li>
+                          <li>Zcash shielded transactions: amount and participants both private</li>
+                          <li>Apple App Tracking Transparency: opt-in required for cross-app data</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d3b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">GDPR Art. 5 &mdash; Data minimisation &rarr;</a></li>
+                          <li><a href="https://z.cash/technology/" target="_blank">Zcash: zero-knowledge privacy &rarr;</a></li>
+                          <li><a href="https://signal.org/blog/sealed-sender/" target="_blank">Signal: sealed sender &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p4">anonymous transactions</a>
+                        <a href="#p5">cryptography</a>
+                        <a href="#p8">write code</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>data-minimisation &nbsp;<span class="h">#</span>zero-knowledge &nbsp;<span class="h">#</span>GDPR</p>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="principle" id="p4">
+                      <span class="principle-num">// 04</span>
+                      <span class="principle-title">ANONYMOUS TRANSACTION SYSTEMS</span>
+                      <div class="original">
+                        &ldquo;Therefore, privacy in an open society requires anonymous transaction
+                        systems. Until now, cash has been the primary such system. An anonymous
+                        system empowers individuals to reveal their identity when desired and only
+                        when desired; this is the essence of privacy.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Cash is anonymous without being secret. Hughes called for digital systems
+                        with this same property &mdash; sixteen years before the Bitcoin genesis block.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d4a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d4b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d4a">
+                        <p>Anonymous &ne; secret. Value moved, the transaction is real &mdash;
+                        but neither party is identified. The lineage to Bitcoin is direct:</p>
+                        <h3>The lineage</h3>
+                        <ul>
+                          <li>1989 &mdash; David Chaum invents DigiCash (blind signatures)</li>
+                          <li>1997 &mdash; Adam Back invents Hashcash (proof-of-work)</li>
+                          <li>1998 &mdash; Wei Dai proposes b-money (decentralised digital cash)</li>
+                          <li>2009 &mdash; Satoshi Nakamoto mines the Bitcoin genesis block</li>
+                          <li>2016 &mdash; Zcash: zero-knowledge anonymous transactions go live</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d4b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank">Bitcoin whitepaper &mdash; Nakamoto 2008 &rarr;</a></li>
+                          <li><a href="https://nakamotoinstitute.org/" target="_blank">Satoshi Nakamoto Institute &rarr;</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/DigiCash" target="_blank">DigiCash &mdash; Wikipedia &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p3">minimal disclosure</a>
+                        <a href="#p5">cryptography</a>
+                        <a href="#p8">write code</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>bitcoin &nbsp;<span class="h">#</span>digital-cash &nbsp;<span class="h">#</span>anonymity &nbsp;<span class="h">#</span>DigiCash</p>
+                    </div>
+
+                    <!-- 05 -->
+                    <div class="principle" id="p5">
+                      <span class="principle-num">// 05</span>
+                      <span class="principle-title">CRYPTOGRAPHY AS THE TOOL</span>
+                      <div class="original">
+                        &ldquo;Privacy in an open society also requires cryptography. To encrypt
+                        is to indicate the desire for privacy, and to encrypt with weak
+                        cryptography is to indicate not too much desire for privacy.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Encryption is not a feature &mdash; it is an expression of intent.
+                        Weak crypto is almost an insult to the principle. Strong cryptography
+                        is what privacy means in digital form.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d5a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d5b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d5a">
+                        <p>In 1993 strong cryptography was a US munition. Exporting it was a
+                        federal crime. Hughes wrote this in direct defiance of those controls.</p>
+                        <h3>Tools Hughes was referencing</h3>
+                        <ul>
+                          <li>PGP (1991) &mdash; Phil Zimmermann, asymmetric encryption for email</li>
+                          <li>RSA &mdash; public-key cryptography enabling encrypted communications</li>
+                          <li>Anonymous remailers &mdash; chains of encrypted hops obscuring message origin</li>
+                        </ul>
+                        <h3>Modern descendants</h3>
+                        <ul>
+                          <li>Signal Protocol &mdash; end-to-end encrypted messaging</li>
+                          <li>TLS/HTTPS &mdash; now covers ~95% of web traffic</li>
+                          <li>Tor &mdash; onion routing for anonymous browsing</li>
+                          <li>GPG &mdash; PGP successor, still used for code signing today</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d5b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://www.gnupg.org/" target="_blank">GnuPG &rarr;</a></li>
+                          <li><a href="https://signal.org/" target="_blank">Signal &rarr;</a></li>
+                          <li><a href="https://www.torproject.org/" target="_blank">The Tor Project &rarr;</a></li>
+                          <li><a href="https://www.eff.org/issues/crypto-wars" target="_blank">EFF: Crypto Wars &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p4">anonymous transactions</a>
+                        <a href="#p6">don&rsquo;t trust institutions</a>
+                        <a href="#p9">anti-regulation</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>PGP &nbsp;<span class="h">#</span>encryption &nbsp;<span class="h">#</span>Signal &nbsp;<span class="h">#</span>Tor</p>
+                    </div>
+                    <!-- 06 -->
+                    <div class="principle" id="p6">
+                      <span class="principle-num">// 06</span>
+                      <span class="principle-title">DON'T TRUST INSTITUTIONS</span>
+                      <div class="original">
+                        &ldquo;We cannot expect governments, corporations, or other large, faceless
+                        organizations to grant us privacy out of their beneficence. It is to their
+                        advantage to speak of us, and we should expect that they will speak.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Privacy will never be given &mdash; it must be taken. No law or terms of
+                        service substitutes for a technical guarantee. Thirty years of mass
+                        surveillance revelations have validated every word of this.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d6a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d6b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d6a">
+                        <h3>Government surveillance since 1993</h3>
+                        <ul>
+                          <li>2013: Snowden reveals NSA PRISM &mdash; bulk collection from major tech companies</li>
+                          <li>GCHQ Tempora: bulk interception of undersea fibre cables</li>
+                          <li>China Social Credit System: comprehensive behavioural surveillance</li>
+                        </ul>
+                        <h3>Corporate data collection</h3>
+                        <ul>
+                          <li>Cambridge Analytica: 87M profiles harvested without consent</li>
+                          <li>Google: tracks across sites, apps, and physical location</li>
+                          <li>Data brokers: dossiers with thousands of data points per person</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d6b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/PRISM_(surveillance_program)" target="_blank">NSA PRISM &mdash; Wikipedia &rarr;</a></li>
+                          <li><a href="https://www.eff.org/nsa-spying" target="_blank">EFF: NSA Spying &rarr;</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Edward_Snowden" target="_blank">Edward Snowden &mdash; Wikipedia &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p5">cryptography</a>
+                        <a href="#p7">self-reliance</a>
+                        <a href="#p8">write code</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>Snowden &nbsp;<span class="h">#</span>NSA &nbsp;<span class="h">#</span>surveillance-capitalism</p>
+                    </div>
+
+                    <!-- 07 -->
+                    <div class="principle" id="p7">
+                      <span class="principle-num">// 07</span>
+                      <span class="principle-title">SELF-RELIANCE IMPERATIVE</span>
+                      <div class="original">
+                        &ldquo;We must defend our own privacy if we expect to have any. People have
+                        been defending their own privacy for centuries with whispers, darkness,
+                        envelopes, closed doors, secret handshakes, and couriers. The technologies
+                        of the past did not allow for strong privacy, but electronic technologies do.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Privacy protection is an ancient human tradition, not a radical new idea.
+                        The digital age needs digital equivalents. And it requires collective
+                        participation: if only dissidents encrypt, encryption becomes a red flag.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d7a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d7b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d7a">
+                        <p>Individual privacy depends on collective behaviour. If only activists
+                        use encrypted email, encryption marks them as suspicious. If everyone
+                        uses it, it&rsquo;s just email.</p>
+                        <h3>Historical tools &rarr; digital equivalents</h3>
+                        <ul>
+                          <li>Whispers &rarr; end-to-end encrypted messaging (Signal)</li>
+                          <li>Sealed envelopes &rarr; HTTPS everywhere</li>
+                          <li>Locked doors &rarr; full-disk encryption</li>
+                          <li>Couriers &rarr; Tor onion routing</li>
+                          <li>Secret handshakes &rarr; cryptographic signatures</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d7b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://ssd.eff.org/" target="_blank">EFF: Surveillance Self-Defence &rarr;</a></li>
+                          <li><a href="https://www.privacyguides.org/" target="_blank">Privacy Guides &rarr;</a></li>
+                          <li><a href="https://letsencrypt.org/" target="_blank">Let&rsquo;s Encrypt &mdash; HTTPS for everyone &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p1">privacy vs secrecy</a>
+                        <a href="#p6">don&rsquo;t trust institutions</a>
+                        <a href="#p10">social contract</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>collective-action &nbsp;<span class="h">#</span>defaults &nbsp;<span class="h">#</span>mass-adoption</p>
+                    </div>
+
+                    <!-- 08 -->
+                    <div class="principle" id="p8">
+                      <span class="principle-num">// 08</span>
+                      <span class="principle-title">CYPHERPUNKS WRITE CODE</span>
+                      <div class="original">
+                        &ldquo;Cypherpunks write code. We know that someone has to write software to
+                        defend privacy, and since we can&rsquo;t get privacy unless we all do,
+                        we&rsquo;re going to write it. We publish our code so that our fellow
+                        Cypherpunks may practice and play with it. Our code is free for all to
+                        use, worldwide.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Don&rsquo;t lobby &mdash; build. Open-source code distributed worldwide
+                        cannot be seized by any one jurisdiction. Code that spreads cannot be
+                        uninvented. PGP, Tor, Signal, Bitcoin all followed this imperative.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d8a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d8b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d8a">
+                        <p>Publishing code is not just generosity &mdash; it&rsquo;s strategy. Code
+                        in one jurisdiction spreads everywhere instantly. A widely-dispersed
+                        open-source project cannot be shut down by any single authority.</p>
+                        <h3>Direct cypherpunk projects</h3>
+                        <ul>
+                          <li>PGP (1991) &mdash; Phil Zimmermann, email encryption, still used 30+ years on</li>
+                          <li>SSL/TLS (1995) &mdash; encrypted web, now universal as HTTPS</li>
+                          <li>Tor (2002) &mdash; onion routing, used by journalists and dissidents worldwide</li>
+                          <li>Bitcoin (2009) &mdash; Satoshi Nakamoto, decentralised anonymous digital cash</li>
+                          <li>Signal (2013) &mdash; Moxie Marlinspike, E2E encrypted messaging at scale</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d8b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://www.torproject.org/" target="_blank">The Tor Project &rarr;</a></li>
+                          <li><a href="https://signal.org/" target="_blank">Signal &rarr;</a></li>
+                          <li><a href="https://github.com/" target="_blank">GitHub &mdash; where cypherpunks write code &rarr;</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Phil_Zimmermann" target="_blank">Phil Zimmermann &mdash; Wikipedia &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p5">cryptography</a>
+                        <a href="#p6">don&rsquo;t trust institutions</a>
+                        <a href="#p9">anti-regulation</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>open-source &nbsp;<span class="h">#</span>PGP &nbsp;<span class="h">#</span>Tor &nbsp;<span class="h">#</span>Signal &nbsp;<span class="h">#</span>Bitcoin</p>
+                    </div>
+
+                    <!-- 09 -->
+                    <div class="principle" id="p9">
+                      <span class="principle-num">// 09</span>
+                      <span class="principle-title">ANTI-REGULATION STANCE</span>
+                      <div class="original">
+                        &ldquo;Cypherpunks deplore regulations on cryptography, for encryption is
+                        fundamentally a private act. Even laws against cryptography reach only so
+                        far as a nation&rsquo;s border and the arm of its violence. Cryptography
+                        will ineluctably spread over the whole globe.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Morally: encrypting is private speech. Practically: laws end at borders,
+                        the internet doesn&rsquo;t. Hughes wrote &ldquo;ineluctably&rdquo; &mdash;
+                        unavoidably. Written during the US Crypto Wars of 1993. He was right.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d9a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d9b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d9a">
+                        <h3>The First Crypto War (1990s)</h3>
+                        <ul>
+                          <li>NSA Clipper Chip: backdoored encryption standard for all US comms</li>
+                          <li>ITAR export controls: treating encryption as a weapon</li>
+                          <li>Phil Zimmermann prosecuted for releasing PGP internationally</li>
+                          <li>Result: controls lifted by 1999. Cypherpunks won.</li>
+                        </ul>
+                        <h3>The Second Crypto War (2010s&ndash;present)</h3>
+                        <ul>
+                          <li>FBI vs Apple: demanding iPhone backdoor after San Bernardino</li>
+                          <li>EARN IT Act: legislation to undermine E2E under child safety framing</li>
+                          <li>Australia Assistance and Access Act 2018: compelled backdoors</li>
+                        </ul>
+                      </div>
+                      <div class="deep" id="d9b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/Clipper_chip" target="_blank">Clipper Chip &mdash; Wikipedia &rarr;</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Crypto_Wars" target="_blank">Crypto Wars &mdash; Wikipedia &rarr;</a></li>
+                          <li><a href="https://www.eff.org/issues/crypto-wars" target="_blank">EFF: Crypto Wars &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p5">cryptography</a>
+                        <a href="#p8">write code</a>
+                        <a href="#p10">social contract</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>Crypto-Wars &nbsp;<span class="h">#</span>Clipper-Chip &nbsp;<span class="h">#</span>regulation</p>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="principle" id="p10">
+                      <span class="principle-num">// 10</span>
+                      <span class="principle-title">SOCIAL CONTRACT FOR PRIVACY</span>
+                      <div class="original">
+                        &ldquo;For privacy to be widespread it must be part of a social contract.
+                        People must come and together deploy these systems for the common good.
+                        We the Cypherpunks seek your questions and your concerns and hope we may
+                        engage you so that we do not deceive ourselves. Onward.&rdquo;
+                        <cite><a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a></cite>
+                      </div>
+                      <p>
+                        Tools alone aren&rsquo;t enough &mdash; privacy requires social adoption.
+                        Hughes admits Cypherpunks can be wrong and need dialogue. A commons,
+                        not a club. Anyone can use the code. Anyone can join the conversation.
+                      </p>
+                      <div class="btn-row">
+                        <a href="#" onclick="return xp(this,'d10a')">+ explain</a>
+                        <a href="#" onclick="return xp(this,'d10b')">+ context &amp; links</a>
+                      </div>
+                      <div class="deep" id="d10a">
+                        <h3>Progress since 1993</h3>
+                        <ul>
+                          <li>HTTPS: ~0% &rarr; ~95% of web traffic over 20 years</li>
+                          <li>Signal: 40M+ active users</li>
+                          <li>Tor: ~2M daily users</li>
+                          <li>But: surveillance capitalism still dominates mainstream internet</li>
+                        </ul>
+                        <h3>The unfinished project</h3>
+                        <p>Hughes ends with &ldquo;Onward.&rdquo; &mdash; not &ldquo;done.&rdquo;
+                        Thirty years later the work continues. Anyone can use the code.
+                        Anyone can join the conversation.</p>
+                      </div>
+                      <div class="deep" id="d10b">
+                        <h3>Further reading</h3>
+                        <ul>
+                          <li><a href="https://www.eff.org/" target="_blank">Electronic Frontier Foundation &rarr;</a></li>
+                          <li><a href="https://privacyinternational.org/" target="_blank">Privacy International &rarr;</a></li>
+                          <li><a href="https://www.privacyguides.org/" target="_blank">Privacy Guides &rarr;</a></li>
+                        </ul>
+                      </div>
+                      <div class="conn-row"><span class="lbl">//</span>
+                        <a href="#p6">don&rsquo;t trust institutions</a>
+                        <a href="#p7">self-reliance</a>
+                        <a href="#p8">write code</a>
+                      </div>
+                      <p class="tags"><span class="h">#</span>social-contract &nbsp;<span class="h">#</span>commons &nbsp;<span class="h">#</span>EFF</p>
+                    </div>
+
+                    <hr />
+
+                    <p>
+                      Original text: <a href="https://www.activism.net/cypherpunk/manifesto.html" target="_blank">activism.net/cypherpunk/manifesto.html</a><br />
+                      Author: <a href="https://en.wikipedia.org/wiki/Eric_Hughes_(cypherpunk)" target="_blank">Eric Hughes</a> &mdash; 9 March 1993
+                    </p>
+                </div>
+            </div>
+            <script type="text/javascript" src="scripts/manifesto-xp.js"></script>
+            <script type="text/javascript" src="scripts/drag.js"></script>
+        </div>
+        <div id="footer">
+            <div class="element">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

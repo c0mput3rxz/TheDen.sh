@@ -1,0 +1,80 @@
+{
+  "name": "penguin Heilman",
+  "title": "c0mput3rxz.com",
+  "role": "Founder & CTO",
+  "company": "Azos Finance",
+  "companyUrl": "https://azos.finance",
+  "description": "Web3 Developer, Builder, and Blockchain Enthusiast",
+  "interests": ["Web3", "DeFi", "Smart Contracts", "Blockchain Security", "Coding", "Bioinformatics", "SecOps"],
+  "location": "CA, USA",
+  "email": "penguin@azosd.tech",
+  "github": "https://github.com/c0mput3rxz",
+  "linkedin": "",
+  "projects": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/c0mput3rxz",
+      "description": "Open source contributions and projects"
+    },
+    {
+      "name": "Azos Finance",
+      "url": "https://azos.finance",
+      "description": "DeFi platform and protocols"
+    }
+  ],
+  "links": [
+    {
+      "name": "Ethereum",
+      "url": "https://ethereum.org",
+      "description": "The world's programmable blockchain"
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "description": "Tech news and discussions"
+    },
+    {
+      "name": "Waterdeep",
+      "url": "https://waterdeep.org/",
+      "description": "City of Splendors"
+    }
+  ],
+  "press": {
+    "podcasts": [
+      {
+        "name": "MetaRadio",
+        "url": "https://podcasters.spotify.com/pod/show/metagame/episodes/Humans-of-Metagame-2---Penguin-The-High-Flying-Flightless-Bird-e12lgib",
+        "description": "Humans of MetaGame #2 — Penguin The High Flying Flightless Bird"
+      },
+      {
+        "name": "MetaRadio",
+        "url": "https://podcasters.spotify.com/pod/show/metagame/episodes/Share-What-Youre-Makin-w-Chair--Bacon-1---Penguin-on-Never-Touch-Fiat-Again-e162gv9",
+        "description": "Share What You're Makin' w/ Chair & Bacon #1 — Penguin on Never Touch Fiat Again"
+      },
+      {
+        "name": "Mattereum — The Future of Stuff",
+        "url": "https://medium.com/humanizing-the-singularity/the-future-of-stuff-podcast-ep-2-from-asset-backed-finance-to-art-with-a-message-2faa1538b4bc",
+        "description": "Ep. 2: From Asset-Backed Finance to Art with a Message"
+      }
+    ],
+    "articles": [
+      {
+        "name": "Toilet Paper NFTs Wipe Out $7 Million in Medical Debt",
+        "url": "https://fortune.com/2022/03/07/toilet-paper-nfts-wipe-out-medical-debt/",
+        "publication": "Fortune"
+      },
+      {
+        "name": "Partnership with Azos Finance to Power the Collateral Layer of Climate Impact Assets",
+        "url": "https://www.diadata.org/blog/post/partnership-with-azos-finance-stablecoin/",
+        "publication": "DIA Oracles"
+      },
+      {
+        "name": "MetaSpecial — MetaFest Is aLive!",
+        "url": "https://metagame.substack.com/p/metaspecial-metafest-is-alive",
+        "publication": "MetaGame Substack"
+      }
+    ],
+    "interviews": []
+  }
+}
+
