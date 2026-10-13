@@ -1,0 +1,3 @@
+#!/bin/sh
+# Strip Cursor attribution trailers before the commit is created.
+exec python3 "$(dirname "$0")/strip_cursor_trailers.py" "$1"
