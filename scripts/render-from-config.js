@@ -39,8 +39,21 @@ class WebsiteRenderer {
             nameElement.textContent = this.config.name;
         }
 
-        // Update about section
-        const aboutSection = document.querySelector('#card1 .move:last-of-type');
+        // Name + social icons
+        const nameCard = document.querySelector('#card-name');
+        if (nameCard) {
+            let socialHtml = `<h1><strong>${this.config.name}</strong></h1>`;
+            if (this.config.github) {
+                socialHtml += `<a class="social-icon-link" href="${this.config.github}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">${SOCIAL_ICON_SVG.github}</a>`;
+            }
+            if (this.config.linkedin) {
+                socialHtml += `<a class="social-icon-link" href="${this.config.linkedin}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">${SOCIAL_ICON_SVG.linkedin}</a>`;
+            }
+            nameCard.innerHTML = socialHtml;
+        }
+
+        // About card
+        const aboutSection = document.querySelector('#card-about');
         if (aboutSection) {
             let html = '<h4>About</h4>';
             html += `<p>${this.config.role} @ <a href="${this.config.companyUrl}" target="_blank">${this.config.company}</a></p>`;
@@ -52,19 +65,6 @@ class WebsiteRenderer {
             html += '<h4>Contact</h4>';
             html += `<p>${this.config.email}</p>`;
             aboutSection.innerHTML = html;
-        }
-
-        // Update social links
-        const socialLinks = document.querySelector('#card1 h1');
-        if (socialLinks) {
-            let socialHtml = `<h1><strong>${this.config.name}</strong></h1>`;
-            if (this.config.github) {
-                socialHtml += `<a class="social-icon-link" href="${this.config.github}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">${SOCIAL_ICON_SVG.github}</a>`;
-            }
-            if (this.config.linkedin) {
-                socialHtml += `<a class="social-icon-link" href="${this.config.linkedin}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">${SOCIAL_ICON_SVG.linkedin}</a>`;
-            }
-            socialLinks.outerHTML = `<div id="card1" class="move">${socialHtml}</div>`;
         }
 
         // Update projects section (must not use :last-of-type — manifesto is last .draggable)

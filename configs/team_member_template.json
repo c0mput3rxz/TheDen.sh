@@ -1,0 +1,33 @@
+{
+  "name": "Team Member Name",
+  "title": "team-member.com",
+  "role": "Role Title",
+  "company": "Company Name",
+  "companyUrl": "https://company.com",
+  "description": "Brief description",
+  "interests": ["Interest 1", "Interest 2"],
+  "location": "Location",
+  "email": "email@example.com",
+  "github": "https://github.com/username",
+  "linkedin": "https://linkedin.com/in/username",
+  "projects": [
+    {
+      "name": "Project Name",
+      "url": "https://project-url.com",
+      "description": "Project description"
+    }
+  ],
+  "links": [
+    {
+      "name": "Link Name",
+      "url": "https://link-url.com",
+      "description": "Link description"
+    }
+  ],
+  "press": {
+    "podcasts": [],
+    "articles": [],
+    "interviews": []
+  }
+}
+

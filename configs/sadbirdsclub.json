@@ -1,0 +1,34 @@
+{
+  "name": "SAD BIRDS CLUB",
+  "title": "SAD BIRDS CLUB",
+  "type": "ecommerce",
+  "description": "Handmade sad bird merchandise",
+  "products": {
+    "earrings": [
+      { "id": 1, "name": "Sad Bird Earrings", "price": 12.00, "emoji": "🐧" },
+      { "id": 2, "name": "Melancholy Bird Earrings", "price": 15.00, "emoji": "🐧" },
+      { "id": 3, "name": "Tiny Sad Bird Earrings", "price": 10.00, "emoji": "🐧" }
+    ],
+    "buttons": [
+      { "id": 4, "name": "Sad Bird Button", "price": 3.00, "emoji": "🐧" },
+      { "id": 5, "name": "Sad Bird Pin", "price": 4.00, "emoji": "🐧" },
+      { "id": 6, "name": "Mini Sad Bird Button", "price": 2.50, "emoji": "🐧" }
+    ],
+    "stickers": [
+      { "id": 7, "name": "Sad Bird Sticker", "price": 2.00, "emoji": "🐧" },
+      { "id": 8, "name": "Sad Bird Sheet", "price": 8.00, "emoji": "🐧" },
+      { "id": 9, "name": "Sad Bird Pack", "price": 5.00, "emoji": "🐧" }
+    ],
+    "mugs": [
+      { "id": 10, "name": "Sad Bird Mug", "price": 15.00, "emoji": "🐧" },
+      { "id": 11, "name": "Sad Bird Travel Mug", "price": 18.00, "emoji": "🐧" },
+      { "id": 12, "name": "Sad Bird Coffee Cup", "price": 12.00, "emoji": "🐧" }
+    ],
+    "custom": [
+      { "id": 13, "name": "Custom Sad Bird Design", "price": 25.00, "emoji": "🐧" },
+      { "id": 14, "name": "Personalized Sad Bird", "price": 30.00, "emoji": "🐧" }
+    ]
+  },
+  "categories": ["earrings", "buttons", "stickers", "mugs", "custom"]
+}
+
